@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Currverter - (Online) Conversor de Moedas</title>
+</head>
+<body>
+
+<main>
+    <header>Conversor de Moedas</header>
+    <form action="#">
+        <section class="currency-value">
+            <p>Digite a quantia</p>
+                <input type="number" value="1"  step="0.01">
+        </section>
+
+        <section class="currency-list">
+            <section class="primary-currency">
+                <p>De</p>
+                <div class="select-currency">
+                  <img src="https://flagcdn.com/48x36/us.png" alt="bandeira"> <!--Seletor de Moeda principal-->
+                  <select></select>  
+                </div>
+            </section>
+
+            <section class="icon"><i class="fas fa-exchange-alt"></i></section> <!--Setas de conversão-->
+
+            <section class="secundary-currency">
+                <p>Para</p>
+                <div class="select-currency">
+                  <img src="https://flagcdn.com/48x36/br.png" alt="bandeira"> <!--Seletor de Moeda secundária-->
+                  <select></select>  
+                </div>
+            </section>
+        </section>
+
+        <section class="currency-conversion"></section><!--Mensagem da conversão-->
+        <button>Gerar taxa de câmbio</button>
+    </form>
+</main>
+
+<script src="js/country-list.js"></script>
+<script src="js/script.js"></script>
+    
+</body>
+</html>
